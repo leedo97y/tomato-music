@@ -1,0 +1,32 @@
+// Config
+@import "./config/_variables.scss";
+@import "./config/_reset.scss";
+
+// Components
+@import "./components/header.scss";
+@import "./components/footer.scss";
+
+// Screens
+@import "./screens/main.scss";
+@import "./screens/register.scss";
+@import "./screens/login.scss";
+@import "./screens/myplaylist.scss";
+@import "./screens//toptracks.scss";
+@import "./screens/popstar.scss";
+@import "./screens/kpop.scss";
+
+//// Defaults
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: $bg;
+  color: white;
+  overflow-x: hidden;
+
+  width: 100vw;
+}

@@ -1,0 +1,363 @@
+#myPlaylistDiv {
+  width: 100vw;
+  height: 100vh;
+
+  box-sizing: border-box;
+  padding-top: 50px;
+
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+
+  background: $gradientBg;
+}
+
+#wholeDiv {
+  margin-top: 80px;
+
+  width: 90%;
+  height: 70%;
+
+  display: flex;
+}
+
+// 뮤직 플레이어 부분
+#playerControlDiv {
+  width: 40%;
+  height: 100%;
+  background-color: $lightRed;
+  color: $bg;
+
+  padding: 30px;
+  padding-top: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+
+  box-sizing: border-box;
+
+  #albumImg {
+    width: 300px;
+    height: 300px;
+    margin-top: -5px;
+
+    border-radius: 5px;
+
+    background-color: $bg;
+  }
+
+  #albumTitle {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+
+  #albumArtist {
+    font-size: $basicFont;
+    margin-top: -10px;
+  }
+
+  #myslider {
+    width: 350px;
+    height: 6px;
+    background: #151518;
+    border-radius: 10px;
+    margin-top: -5px;
+
+    div {
+      width: 2px;
+      height: 6px;
+
+      background: $red;
+      border-radius: 10px;
+    }
+  }
+
+  #mytimeDiv {
+    display: flex;
+
+    #mystarttime {
+      width: 50px;
+      height: 15px;
+      color: #494b4e;
+      line-height: 0;
+      font-size: 9pt;
+      margin-top: -8px;
+      margin-left: 21px;
+    }
+    #myendtime {
+      width: 50px;
+      height: 15px;
+      color: #494b4e;
+      line-height: 0;
+      font-size: 9pt;
+      margin-top: -8px;
+      margin-left: 270px;
+    }
+  }
+
+  // 컨트롤 버튼 부분
+  #playerControlButtonDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+
+    margin-top: -20px;
+    box-sizing: border-box;
+
+    img {
+      width: 30px;
+      height: 30px;
+
+      cursor: pointer;
+    }
+
+    #prev,
+    #next {
+      width: 35px;
+      height: 35px;
+    }
+
+    #play,
+    #pause {
+      width: 30px;
+      height: 30px;
+    }
+
+    #mute {
+      width: 23px;
+      height: 23px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+}
+
+// 플레이리스트 부분
+#playerlistDiv {
+  width: 60%;
+  height: 100%;
+
+  background-color: $formGradientBg;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  gap: 30px;
+
+  box-sizing: border-box;
+
+  #nowAddedListDiv {
+    width: 100%;
+    height: 180px;
+
+    box-sizing: border-box;
+    margin-top: -5px;
+
+    h1 {
+      width: auto;
+      font-size: 20px;
+      font-weight: 500;
+
+      border-bottom: 1px solid #fff;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    #playlistol {
+      display: flex;
+      flex-direction: column;
+
+      box-sizing: border-box;
+
+      width: 100%;
+      height: 170px;
+
+      padding: 10px;
+      padding-top: 5px;
+      padding-left: 0;
+      margin-bottom: 20px;
+
+      li {
+        margin-bottom: 20px;
+
+        cursor: pointer;
+      }
+
+      #musicli {
+        margin-bottom: 10px;
+
+        cursor: pointer;
+
+        #musicPlayTitle {
+          font-size: $basicFont;
+          margin-bottom: 10px;
+        }
+
+        #musicPlayArtist {
+          font-size: $middleFont;
+        }
+      }
+
+      #songTitle {
+        font-size: $basicFont;
+        margin-bottom: 10px;
+      }
+
+      #songArtist {
+        font-size: $middleFont;
+      }
+
+      overflow: auto;
+      overflow-y: hidden;
+      overflow-y: hidden;
+
+      &:hover {
+        overflow-y: visible;
+        cursor: pointer;
+      }
+
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+        margin-bottom: 20px;
+        margin-top: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $blackScrollBar;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  #wholeMusiclistDiv {
+    width: 100%;
+    height: 190px;
+
+    box-sizing: border-box;
+    margin-top: 20px;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 500;
+
+      border-bottom: 1px solid #fff;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    #wholeMusiclistol {
+      display: flex;
+      flex-direction: column;
+
+      box-sizing: border-box;
+
+      width: 100%;
+      height: 180px;
+
+      padding: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-left: 0;
+      margin-bottom: 20px;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding-right: 10px;
+
+        margin-bottom: 20px;
+
+        cursor: pointer;
+
+        #plus {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      #musicli {
+        margin-bottom: 20px;
+
+        cursor: pointer;
+
+        #musicPlayTitle {
+          font-size: $basicFont;
+          margin-bottom: 10px;
+        }
+
+        #musicPlayArtist {
+          font-size: $middleFont;
+        }
+      }
+
+      #songli {
+        margin-bottom: 10px;
+
+        cursor: pointer;
+        #songTitle {
+          font-size: $basicFont;
+          margin-bottom: 10px;
+        }
+
+        #songArtist {
+          font-size: $middleFont;
+        }
+      }
+
+      #musicPlayTitle {
+        font-size: $basicFont;
+        margin-bottom: 10px;
+      }
+
+      #musicPlayArtist {
+        font-size: $middleFont;
+      }
+
+      overflow: auto;
+      overflow-y: hidden;
+      overflow-y: hidden;
+
+      &:hover {
+        overflow-y: visible;
+        cursor: pointer;
+      }
+
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+        margin-bottom: 20px;
+        margin-top: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $blackScrollBar;
+        border-radius: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+#popDiv {
+  width: 100vw;
+  height: 100vh;
+
+  box-sizing: border-box;
+  padding-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+
+  background: $gradientBg;
+
+  #headingTitle {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-bottom: 5px;
+  }
+}
+
+// star personal Info
+#popStarInfoDiv {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+
+  margin-top: 80px;
+
+  width: 80%;
+  height: 70%;
+  background-color: $lightBg;
+
+  border-radius: 5px;
+}
+
+#starImageAndAlbum {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  background-color: $lightBg;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  width: 40%;
+  padding: 30px;
+}
+
+// star image, star name part
+#starInfoDiv {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  box-sizing: border-box;
+
+  #starImage {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 320px;
+
+    border-radius: 5px;
+    margin-top: 10px;
+
+    filter: opacity(70%);
+  }
+
+  #starName {
+    position: relative;
+    z-index: 1;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: -40px;
+
+    text-align: right;
+
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+// similar star part
+#similarStarDiv {
+  width: 100%;
+  height: 130px;
+
+  box-sizing: border-box;
+
+  #starUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    margin-top: -5px;
+
+    #liStar {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      margin-right: 10px;
+      padding-left: 10px;
+
+      #smallStarImg {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+
+        border-radius: 100px;
+      }
+
+      #smallStarName {
+        font-size: $smallFont;
+      }
+    }
+  }
+}
+
+// star description part
+#starDescDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  box-sizing: border-box;
+
+  width: 60%;
+  padding: 30px;
+
+  background-color: $lightRed;
+  color: $bg;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  #tagDiv {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+
+    #tagTitle {
+      font-size: 25px;
+      font-weight: 600;
+
+      margin-bottom: 15px;
+    }
+
+    #tagUl {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      margin-top: 5px;
+
+      gap: 15px;
+
+      #tagLi {
+        width: 110px;
+        height: 25px;
+        margin-right: 10px;
+        padding-top: 10px;
+        font-size: $middleFont;
+        font-weight: 600;
+        text-align: center;
+        color: $darkRed;
+        letter-spacing: 1px;
+
+        border: 1.5px solid $darkRed;
+        border-radius: 40px;
+      }
+    }
+  }
+
+  #starTextDiv {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    #starDescTitle {
+      font-size: 25px;
+      font-weight: 600;
+
+      margin-bottom: 15px;
+    }
+
+    #starDesc {
+      font-size: $middleFont;
+      line-height: 20px;
+      letter-spacing: 1px;
+      text-overflow: ellipsis;
+
+      a {
+        display: none;
+      }
+    }
+  }
+}

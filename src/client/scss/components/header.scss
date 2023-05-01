@@ -1,0 +1,74 @@
+//// header
+#headerDiv {
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  height: 80px;
+
+  font-size: $largeFont;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $red;
+  padding-top: 5px;
+
+  #homeTitleDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    #tomatoLogo {
+      width: 90px;
+      height: 80px;
+      margin-left: 50px;
+    }
+
+    h1 {
+      font-size: $logoFont;
+      font-weight: 700;
+      margin-left: 7px;
+    }
+
+    margin-right: 400px;
+  }
+}
+
+#navDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  margin-right: 50px;
+
+  span {
+    width: 130px;
+    height: 30px;
+    text-align: center;
+
+    padding-top: 5px;
+    cursor: pointer;
+  }
+
+  #loginBtn {
+    width: 130px;
+    height: 50px;
+
+    font-size: $largeFont;
+    font-weight: 500;
+    color: #fff;
+
+    background-color: $darkBtn;
+    border: none;
+    border-radius: 5px;
+
+    &:hover,
+    &:active {
+      background-color: $lightDarkBtn;
+    }
+  }
+}
