@@ -3,7 +3,7 @@ import { async } from "regenerator-runtime";
 
 const emailInput = document.querySelector("#email");
 const passwordInput = document.querySelector("#password");
-// const nicknameInput = document.querySelector("#nickname");
+const nicknameInput = document.querySelector("#nickname");
 const submitBtn = document.querySelector("#submitBtn");
 
 // 원래 회원가입 form 이어서 nickname을 입력하도록 되어 있었음.
@@ -12,7 +12,7 @@ const onSubmitForm = async (e) => {
 
   const email = emailInput.value;
   const password = passwordInput.value;
-  // const nickname = nicknameInput.value;
+  const nickname = nicknameInput.value;
 
   // vaildation test
   const emailValidationCheck = (email) => {
