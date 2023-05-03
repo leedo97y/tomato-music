@@ -32,6 +32,7 @@ const onLoginClick = async (e) => {
 
     const res = await Api.post("/apis/login", loginData);
     const token = res.token;
+    console.log(token);
 
     sessionStorage.setItem("token", token);
 
