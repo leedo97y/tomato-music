@@ -2,7 +2,8 @@
 
 ## 프로젝트 소개
 
-![Tomuto](https://user-images.githubusercontent.com/99410440/234023508-44304561-7e7f-4bd6-8b8a-e6ac8f196dec.png)
+![Tomuto](https://user-images.githubusercontent.com/99410440/236187877-71c60255-f5e2-4550-9dbc-e762177c84ca.png)
+
 
 🔗 [Welcome to Tomuto Music !](https://tomuto.fly.dev/)
 <br>
@@ -48,9 +49,7 @@ Tomato를 좋아해서 토마토를 모티브로 뮤직 플레이어 사이트�
 
 - last.fm API를 사용하여 pop top 50 인기 차트를 구현하였습니다.
 - 또, 저장된 오디오를 이용하여 미니 플레이리스트를 구현하였습니다.
-- 로그인 되지 않은 상태이면, 상단 헤더의 버튼이 로그인 버튼으로 바뀝니다.
-  <br>
-  (🍅 리팩토링 예정입니다.)
+- 로그인 되지 않은 상태이면, 상단 헤더에 로그인 버튼과 회원가입 버튼이 나타나며, 유저이름이 Guest로 표시됩니다.
 
 <br>
 <br>
