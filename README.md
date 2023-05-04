@@ -1,4 +1,4 @@
-# Tomuto! - simple music website
+# Tomuto - simple music website
 
 ## 프로젝트 소개
 
@@ -42,7 +42,8 @@
 
 ### 메인 페이지
 
-<img width="800" height="500" alt="스크린샷 2023-04-22 오전 4 04 04" src="https://user-images.githubusercontent.com/99410440/234168703-ffa7fb91-2a0e-4ee3-8e0b-2dc69df4838a.png">
+<img width="900" height="500" alt="main page" src="https://user-images.githubusercontent.com/99410440/236195344-b6d005fb-b67e-4960-a98e-b5ffc9dd597d.png">
+
 
 <br>
 
@@ -57,11 +58,23 @@
 <br>
 <br>
 
+### 회원가입 페이지
+
+<img width="900" height="500" alt="register page" src="https://user-images.githubusercontent.com/99410440/236195958-d902e3cd-65f5-45a6-bb5e-582db99818f3.png">
+
+- 이메일, 비밀번호, 닉네임을 입력하여 회원가입을 할 수 있습니다.
+
+
+<br>
+<br>
+<br>
+
 ### 로그인 페이지
 
-<img width="800" height="500" alt="login page" src="https://user-images.githubusercontent.com/99410440/234161306-729dbd33-c489-417a-80a4-0e210567b6cf.png" alt="로그인 페이지">
+<img width="900" height="500" alt="login page" src="https://user-images.githubusercontent.com/99410440/236195582-feaa93cd-de42-43ba-88b2-ec05f6f773e5.png">
 
-- 회원가입을 한 아이디와 비밀번호로도 로그인이 가능합니다.
+
+- 회원가입을 한 아이디와 비밀번호로 로그인이 가능합니다.
 - 테스트용 정보로 dbTestHandler에 이메일과 비밀번호를 넣어놓았으며, 이 정보로 로그인이 가능합니다.
 
   <br>
@@ -73,8 +86,10 @@ pw: 12341234
 
 <br>
 
-- 정보를 맞게 입력한 경우, 메인페이지로 redirect 되며, 메인페이지 상단 부분에 로그인 유저의 nickname이 표시됩니다.
 - 정보가 다른 경우, 오류메세지가 이메일 input 하단에 표시됩니다.
+- 정보를 맞게 입력한 경우, 아래와 같이 메인페이지로 redirect 되며, 메인페이지 상단 부분에 로그인 유저의 nickname이 표시됩니다.
+
+<img width="900" height="500"  alt="after login" src="https://user-images.githubusercontent.com/99410440/236196513-35791366-670b-40ce-a0be-16fd137ab7c4.png">
 
 <br>
 <br>
@@ -82,7 +97,8 @@ pw: 12341234
   
 ### my playlist 페이지
 
-<img width="800" height="500" alt="myplaylist" src="https://user-images.githubusercontent.com/99410440/234161993-a56a310d-76e0-4708-a9fb-4b4681d11fb1.png">
+<img width="900" height="500" alt="my playlist page" src="https://user-images.githubusercontent.com/99410440/236196923-78479764-01f9-4242-b550-40ba9cec20fa.png">
+
 
 - 음악을 재생할 수 있는 플레이리스트 페이지 입니다.
 - 현재는 저장된 음악에 한해서만 재생목록에 추가가 가능하며, 따로 상태가 저장되는 처리를 해주지 않아 새로고침시 초기화됩니다.
@@ -95,7 +111,7 @@ pw: 12341234
 
 ### top tracks 페이지
 
-<img width="800" height="500" alt="toptracks_img" src="https://user-images.githubusercontent.com/99410440/234162276-5164a704-c73e-4046-b13e-b9402bba727f.png">
+<img width="900" height="500" alt="top tracks page" src="https://user-images.githubusercontent.com/99410440/236197049-9cc8525b-c3e1-4307-873e-69a0dd213bdd.png">
 
 <br>
 
@@ -105,7 +121,7 @@ pw: 12341234
 
 (hover 시)
 
-<img width="800" height="500" alt="스크린샷 2023-04-25 오전 11 31 19" src="https://user-images.githubusercontent.com/99410440/234162591-c72296ef-d73d-45da-bf1a-bd6b2033f852.png">
+<img width="800" height="500" alt="hover top tracks" src="https://user-images.githubusercontent.com/99410440/234162591-c72296ef-d73d-45da-bf1a-bd6b2033f852.png">
 
 <br>
 <br>
@@ -113,7 +129,7 @@ pw: 12341234
 
 ### pop star 페이지
 
-<img width="800" height="500" alt="pop star page" src="https://user-images.githubusercontent.com/99410440/234162750-31269861-c4e8-440d-8113-9b48ea2607c9.png">
+<img width="900" height="500" alt="pop star page" src="https://user-images.githubusercontent.com/99410440/236197212-9421131f-2947-4dff-83fd-53452e55b689.png">
 
 <br>
 
@@ -128,7 +144,8 @@ pw: 12341234
 
 ### k-pop 페이지
 
-<img width="800" height="500" alt="kpop star page" src="https://user-images.githubusercontent.com/99410440/234162829-c3015014-31ad-4fb5-a1cd-970e8ba9b7fe.png">
+<img width="900" height="500" alt="k-pop page" src="https://user-images.githubusercontent.com/99410440/236197320-738bb653-9d23-4176-9011-00e39a335266.png">
+
 <br>
 
 - last.fm API를 사용하여 구현한 k-pop 차트와 k-pop 아티스트에 대한 소개 페이지 입니다.
