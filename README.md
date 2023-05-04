@@ -1,16 +1,15 @@
-# Tomuto ! : music website
+# Tomuto! - simple music website
 
 ## 프로젝트 소개
 
 ![Tomuto](https://user-images.githubusercontent.com/99410440/236187877-71c60255-f5e2-4550-9dbc-e762177c84ca.png)
 
-
-🔗 [Welcome to Tomuto Music !](https://tomuto.fly.dev/)
+🔗 [Welcome to Tomuto !](https://tomuto.fly.dev/)
 <br>
 <br>
 노마드코더에서 진행한 melon 이라는 스트리밍 사이트를 클론코딩한 프로젝트입니다.
 <br>
-Tomato를 좋아해서 토마토를 모티브로 뮤직 플레이어 사이트를 만들어보았습니다.
+토마토를 모티브로 음악 차트와 플레이리스트 기능이 있는 웹사이트를 만들어보았습니다.
 <br>
 <br>
 <br>
@@ -49,7 +48,10 @@ Tomato를 좋아해서 토마토를 모티브로 뮤직 플레이어 사이트�
 
 - last.fm API를 사용하여 pop top 50 인기 차트를 구현하였습니다.
 - 또, 저장된 오디오를 이용하여 미니 플레이리스트를 구현하였습니다.
+  <br>
+
 - 로그인 되지 않은 상태이면, 상단 헤더에 로그인 버튼과 회원가입 버튼이 나타나며, 유저이름이 Guest로 표시됩니다.
+- 로그인 된 상태이면, 상단 헤더에 로그아웃 버튼과 my playlist 버튼이 나타나며, 유저이름이 로그인 한 유저의 nickname으로 표시됩니다.
 
 <br>
 <br>
@@ -57,10 +59,11 @@ Tomato를 좋아해서 토마토를 모티브로 뮤직 플레이어 사이트�
 
 ### 로그인 페이지
 
-<img width="800" height="500" alt="login page" src="https://user-images.githubusercontent.com/99410440/234161306-729dbd33-c489-417a-80a4-0e210567b6cf.png">
+<img width="800" height="500" alt="login page" src="https://user-images.githubusercontent.com/99410440/234161306-729dbd33-c489-417a-80a4-0e210567b6cf.png" alt="로그인 페이지">
 
-- 이메일과 비밀번호를 입력하여 로그인 할 수 있으며, dbTestHandler 파일에 작성된 정보로 로그인이 가능합니다.
-- 아래의 아이디와 비밀번호로 로그인 해주세요.
+- 회원가입을 한 아이디와 비밀번호로도 로그인이 가능합니다.
+- 테스트용 정보로 dbTestHandler에 이메일과 비밀번호를 넣어놓았으며, 이 정보로 로그인이 가능합니다.
+
   <br>
 
 ```txt
@@ -70,12 +73,8 @@ pw: 12341234
 
 <br>
 
-- 정보를 맞게 입력하면, alert 창으로 로그인 성공을 알려줍니다.
-  <br>
-
-<img width="800" alt="login success" src="https://user-images.githubusercontent.com/99410440/234161675-6363660a-e1c6-453f-92b0-08f76521c44b.png">
-
-- 로그인 후 메인페이지 상단 부분이 My Playlist 로 이동할 수 있도록 바뀌며, my playlist를 아용할 수 있습니다.
+- 정보를 맞게 입력한 경우, 메인페이지로 redirect 되며, 메인페이지 상단 부분에 로그인 유저의 nickname이 표시됩니다.
+- 정보가 다른 경우, 오류메세지가 이메일 input 하단에 표시됩니다.
 
 <br>
 <br>
