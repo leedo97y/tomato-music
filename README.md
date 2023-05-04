@@ -1,4 +1,4 @@
-# Tomuto
+# Tomuto ! : music website
 
 ## 프로젝트 소개
 
