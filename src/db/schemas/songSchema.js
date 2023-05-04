@@ -11,10 +11,3 @@ export const SongSchema = new Schema(
     timestamps: true,
   }
 );
-
-/**
- * user 스키마이다.
- *
- * email, password, nickname, role이 있으며,
- * role은 basic-user가 default 값이다.
- */

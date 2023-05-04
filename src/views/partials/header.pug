@@ -7,8 +7,24 @@ header
             span(id="topTracks") Top Tracks
             span(id="popstar") Pop Star
             span(id="kPop") K-POP
-            button(id="loginBtn") 
-                a.link(href="/register") Register
+            
+                .user
+                    if loggedIn
+                        //- .user-avatar
+                        //-     img(src="/public/client/img/defaultAvatar.png")
+                        .user-nickname=loggedInUser.nickname
+                        .user-menu
+                            button(id="loginBtn") 
+                                a(href="/user/logout") logout
+                    else
+                        //- .user-avatar
+                        //-     img(src="/public/client/img/defaultAvatar.png")
+                        .user-nickname Guest
+                        .user-menu
+                            button(id="loginBtn")
+                                a(href="/login") login
+                            button(id="loginBtn")
+                                a(href="/register") register
 
-    script(src="/static/js/header.js") 
-    block scripts
+    //- script(src="/static/js/header.js") 
+    //- block scripts
