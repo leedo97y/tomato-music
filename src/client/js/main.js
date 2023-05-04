@@ -14,6 +14,7 @@ import "../images/plus.png";
 import("../images/tomato_favicon.png");
 import("../images/tomato_logo.png");
 import("../images/defaultUserImg.png");
+import("../images/tomatoUserImg.png");
 
 // album cover images
 import("../images/redLP.jpeg");
