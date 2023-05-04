@@ -47,14 +47,22 @@
         font-size: 40px;
         font-weight: 700;
 
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 10px;
 
         text-align: center;
       }
 
       label {
-        font-size: $bigBasicFont;
+        font-size: 15px;
+      }
+
+      .errorMsg {
+        height: 12px;
+        margin-top: -20px;
+        padding-left: 10px;
+        font-size: 12px;
+        color: tomato;
       }
 
       input {
@@ -96,8 +104,10 @@
         justify-content: flex-end;
         align-content: flex-end;
 
+        height: 80px;
+
         #submitBtn {
-          margin-top: 50px;
+          margin-top: 20px;
           width: 120px;
           height: 45px;
           border: none;

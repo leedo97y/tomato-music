@@ -13,6 +13,7 @@ import "../images/plus.png";
 // favicon, logo
 import("../images/tomato_favicon.png");
 import("../images/tomato_logo.png");
+import("../images/defaultUserImg.png");
 
 // album cover images
 import("../images/redLP.jpeg");

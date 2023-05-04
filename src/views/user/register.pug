@@ -6,11 +6,12 @@ block content
       form(id="registerForm" method="POST")
         h1 Register
 
+        label(for="email") Email
+        input(id="email" type="email" value=email autocomplete="off" autofocus, require name="email" placeholder="Write your email.")
+        
         if errorMsg
             .errorMsg=errorMsg
         
-        label(for="email") Email
-        input(id="email" type="email" value=email autocomplete="off" autofocus, require name="email" placeholder="Write your email.")
         label(for="password") Password 
         input(id="password" type="password" autocomplete="off" require, name="password" minLength="4" maxLength="15" placeholder="4 ~ 15 digit will be needed.")
         label(for="nickname") Nickname 

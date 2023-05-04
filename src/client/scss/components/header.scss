@@ -39,36 +39,67 @@
 
 #navDiv {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 30px;
 
-  margin-right: 50px;
+  margin-right: 350px;
 
   span {
-    width: 130px;
+    width: 100px;
     height: 30px;
     text-align: center;
+
+    font-size: 17px;
 
     padding-top: 5px;
     cursor: pointer;
   }
 
-  #loginBtn {
-    width: 130px;
-    height: 50px;
+  .user {
+    display: flex;
+    flex-direction: row;
 
-    font-size: $largeFont;
-    font-weight: 500;
-    color: #fff;
+    gap: 15px;
 
-    background-color: $darkBtn;
-    border: none;
-    border-radius: 5px;
+    .userImage {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .userNickname {
+      height: 40px;
+      font-size: 17px;
+      text-align: center;
+      padding-top: 10px;
+      margin-right: 10px;
+    }
 
-    &:hover,
-    &:active {
-      background-color: $lightDarkBtn;
+    .userMenu {
+      display: flex;
+      flex-direction: row;
+
+      gap: 10px;
+
+      #loginBtn {
+        width: 120px;
+        height: 40px;
+
+        font-size: 17px;
+        font-weight: 500;
+        color: #fff;
+
+        background-color: $darkBtn;
+        border: none;
+        border-radius: 5px;
+
+        &:hover,
+        &:active {
+          background-color: $lightDarkBtn;
+        }
+      }
     }
   }
 }

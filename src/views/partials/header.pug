@@ -2,29 +2,35 @@ header
     div(id="headerDiv") 
         div(id="homeTitleDiv")
             img(id="tomatoLogo" src="/static/images/tomato_logo.png", alt="tomutoLogo")
-            h1(id="homeTitle") Tomuto
+            h1(id="homeTitle") 
+                a(href="/") Tomuto
         div(id="navDiv")
-            span(id="topTracks") Top Tracks
-            span(id="popstar") Pop Star
-            span(id="kPop") K-POP
+            span(id="topTracks") 
+                a(href="/toptracks") Top Tracks
+            span(id="popstar")
+                a(href="/popstar") Pop Star
+            span(id="kPop")
+                a(href="/kpop") K-POP
             
+            div(id="userDiv")
                 .user
                     if loggedIn
-                        //- .user-avatar
-                        //-     img(src="/public/client/img/defaultAvatar.png")
-                        .user-nickname=loggedInUser.nickname
-                        .user-menu
+                        .userImage
+                            img(src="/static/images/defaultUserImg.png")
+                        .userNickname=loggedInUser.nickname
+                        .userMenu
                             button(id="loginBtn") 
                                 a(href="/user/logout") logout
+                            button(id="loginBtn")
+                                a(href="/myplaylist") my playlist
                     else
-                        //- .user-avatar
-                        //-     img(src="/public/client/img/defaultAvatar.png")
-                        .user-nickname Guest
-                        .user-menu
+                        .userImage
+                            img(src="/static/images/defaultUserImg.png")
+                        .userNickname Guest
+                        .userMenu
                             button(id="loginBtn")
                                 a(href="/login") login
                             button(id="loginBtn")
                                 a(href="/register") register
 
-    //- script(src="/static/js/header.js") 
-    //- block scripts
+
