@@ -2,13 +2,16 @@ import { Schema } from "mongoose";
 
 export const UserSchema = new Schema(
   {
-    email: String,
-    password: String,
-    nickname: String,
-    role: {
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true, minLength: 4 },
+    nickname: {
       type: String,
-      default: "basic-user",
+      required: true,
+      default: function () {
+        return `user ${Math.floor(Math.random()) * 10}`;
+      },
     },
+    createdAt: { type: Date, required: true, default: Date.now },
   },
   {
     timestamps: true,

@@ -1,6 +1,6 @@
 // scss & other
 import "../scss/styles.scss";
-import { async } from "regenerator-runtime";
+import "regenerator-runtime";
 // button images
 import "../images/mute.png";
 import "../images/volume.png";

@@ -1,0 +1,20 @@
+extends ../base
+
+block content
+  div(id="loginDiv")
+    div(id="loginFormDiv")
+      h1 Login
+
+      if errorMsg
+            .errorMsg=errorMsg
+
+      form(id="loginForm" method="POST")
+        label(for="email") Email
+        input(id="loginEmail" type="email", value=email autocomplete="off" require autofocus name="email" placeholder="Write your email.")
+        label(for="password") Password 
+        input(id="loginPassword" type="password", autocomplete="off" require name="password"  placeholder="4 ~ 8 digit will be needed.")
+        div(id="loginBtnDiv") 
+          input(id="loginBtn" type="submit" value="Login") 
+          
+
+

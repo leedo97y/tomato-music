@@ -11,8 +11,8 @@ const onLoginClick = async (e) => {
   const loginEmail = loginEmailInput.value;
   const loginPassword = loginPasswordInput.value;
 
-  const emailValidationCheck = (loginEmail) => {
-    return String(loginEmail)
+  const emailValidationCheck = (email) => {
+    return String(email)
       .toLowerCase()
       .match(/^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/);
   };
@@ -32,7 +32,6 @@ const onLoginClick = async (e) => {
 
     const res = await Api.post("/apis/login", loginData);
     const token = res.token;
-    console.log(token);
 
     sessionStorage.setItem("token", token);
 

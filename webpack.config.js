@@ -13,13 +13,13 @@ module.exports = {
     main: BASE_JS + "main.js",
     header: BASE_JS + "header.js",
     playlist: BASE_JS + "playlist.js",
-    register: BASE_JS + "register.js",
-    login: BASE_JS + "login.js",
+    // register: BASE_JS + "register.js",
+    // login: BASE_JS + "login.js",
     myplaylist: BASE_JS + "myplaylist.js",
     toptracks: BASE_JS + "toptracks.js",
     popstar: BASE_JS + "popstar.js",
     kpop: BASE_JS + "kpop.js",
-    api: BASE_JS + "api.js",
+    // api: BASE_JS + "api.js",
   },
   plugins: [
     new MiniCssExtractPlugin({

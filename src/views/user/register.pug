@@ -1,0 +1,20 @@
+extends ../base
+
+block content
+  div(id="registerDiv")
+    div(id="registerFormDiv")
+      form(id="registerForm" method="POST")
+        h1 Register
+
+        if errorMsg
+            .errorMsg=errorMsg
+        
+        label(for="email") Email
+        input(id="email" type="email" value=email autocomplete="off" autofocus, require name="email" placeholder="Write your email.")
+        label(for="password") Password 
+        input(id="password" type="password" autocomplete="off" require, name="password" minLength="4" maxLength="15" placeholder="4 ~ 15 digit will be needed.")
+        label(for="nickname") Nickname 
+        input(id="nickname" type="text" autocomplete="off" require, name="nickname" placeholder="Write your nickname.")
+        div(id="btnDiv")
+          input(id="submitBtn" type="submit" value="Submit") 
+
