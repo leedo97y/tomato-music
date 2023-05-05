@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
 
@@ -21,7 +22,10 @@ module.exports = {
       filename: "css/styles.css",
       // css 파일을 변환 시켜주는 플러그인
     }),
-
+    new HtmlWebpackPlugin({
+      filename: "home.pug",
+      // 깃헙 페이지로 배포 시도 시 작성했던 코드로, html용 플러그인 코드
+    }),
     new webpack.EnvironmentPlugin({
       // .env 안의 일부 환경변수 인식을 못하는 관계로 플러그인으로 넣음.
       API_KEY: "9ef77bf80f5f45115d9ad6df6c2de8ec",
