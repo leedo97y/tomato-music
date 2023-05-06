@@ -4,7 +4,7 @@
 
 ![Tomuto](https://user-images.githubusercontent.com/99410440/236187877-71c60255-f5e2-4550-9dbc-e762177c84ca.png)
 
-🔗 [Welcome to Tomuto !](https://tomuto.fly.dev/)
+🔗 [Welcome to Tomuto !](https://tomutomu.fly.dev/)
 <br>
 <br>
 노마드코더에서 진행한 melon 이라는 스트리밍 사이트를 클론코딩한 프로젝트입니다.
