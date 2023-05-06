@@ -2,7 +2,7 @@
   "homepage": "Tomuto",
   "name": "tomuto",
   "version": "1.0.0",
-  "description": "Tomato Music",
+  "description": "Tomuto Music",
   "scripts": {
     "start": "node build/init.js",
     "build": "npm run build:server && npm run build:assets",
