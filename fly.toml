@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for tomuto-music on 2023-05-06T01:32:04+09:00
+# fly.toml app configuration file generated for tomutomu on 2023-05-06T17:37:33+09:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "tomuto-music"
-primary_region = "nrt"
+app = "tomutomu"
+primary_region = "ord"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
